@@ -1,0 +1,22 @@
+/* Custom styles that complement Tailwind */
+/* Add any overrides or custom components here as the project grows */
+
+/* Sidebar Navigation Links */
+.sidebar-link {
+    @apply block px-4 py-2.5 rounded-lg text-sm font-medium text-slate-300 transition-all duration-200 hover:bg-slate-700/50 hover:text-white;
+}
+
+.sidebar-link--active {
+    @apply bg-gradient-to-r from-brand-500 to-brand-600 text-white shadow-lg shadow-brand-500/20;
+}
+
+/* Active sidebar link */
+.nav-active {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(148, 163, 184, 0.3); border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(148, 163, 184, 0.5); }
